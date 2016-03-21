@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230376FE1C952BF700BE25EA /* Timpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230376FD1C952BF700BE25EA /* Timpage.swift */; };
 		2377DCEE1C8EC550006A1050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DCED1C8EC550006A1050 /* AppDelegate.swift */; };
-		2377DCF01C8EC550006A1050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DCEF1C8EC550006A1050 /* ViewController.swift */; };
-		2377DCF31C8EC550006A1050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377DCF11C8EC550006A1050 /* Main.storyboard */; };
 		2377DCF51C8EC550006A1050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2377DCF41C8EC550006A1050 /* Assets.xcassets */; };
 		2377DCF81C8EC550006A1050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377DCF61C8EC550006A1050 /* LaunchScreen.storyboard */; };
 		2377DD031C8EC550006A1050 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD021C8EC550006A1050 /* __Tests.swift */; };
 		2377DD0E1C8EC550006A1050 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD0D1C8EC550006A1050 /* __UITests.swift */; };
+		2377DD211C8EC5AE006A1050 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2377DD1E1C8EC5AE006A1050 /* default.png */; };
+		2377DD231C8EC5AE006A1050 /* user.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2377DD201C8EC5AE006A1050 /* user.jpg */; };
+		2377DD281C8EC62E006A1050 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD271C8EC62E006A1050 /* Activity.swift */; };
+		2377DD2A1C8EC649006A1050 /* Mypai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD291C8EC649006A1050 /* Mypai.swift */; };
+		2377DD2C1C8EC656006A1050 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD2B1C8EC656006A1050 /* Message.swift */; };
+		2377DD2E1C8EC664006A1050 /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DD2D1C8EC664006A1050 /* Mine.swift */; };
+		237EFA871C8F1B9D007BD20B /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EFA861C8F1B9D007BD20B /* All.swift */; };
+		237EFA891C8F1BCE007BD20B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EFA881C8F1BCE007BD20B /* School.swift */; };
+		237EFA8B1C8F1BE8007BD20B /* Streetphoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EFA8A1C8F1BE8007BD20B /* Streetphoto.swift */; };
+		237EFA8D1C8F1BFF007BD20B /* Graduate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EFA8C1C8F1BFF007BD20B /* Graduate.swift */; };
+		237EFA8F1C8F1C13007BD20B /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237EFA8E1C8F1C13007BD20B /* Snow.swift */; };
+		237FAFBD1C9436C2008E85AB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237FAFBC1C9436C2008E85AB /* Main.swift */; };
+		2386C0F71C92B9220041C703 /* DraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2386C0F61C92B9220041C703 /* DraVC.swift */; };
+		23895F7C1C983D160065B1EC /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23895F7B1C983D160065B1EC /* login.swift */; };
+		23898FD51C8F055E00ED8D51 /* Nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 23898FD41C8F055E00ED8D51 /* Nav.png */; };
+		23C068B71C94FE5E00B9B5F7 /* Firstview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C068B61C94FE5E00B9B5F7 /* Firstview.swift */; };
+		23C068BA1C9506EA00B9B5F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C068B81C9506EA00B9B5F7 /* Main.storyboard */; };
+		23C88E6A1C99754E00E38402 /* ForgetPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C88E691C99754E00E38402 /* ForgetPassWordView.swift */; };
+		23C88E6D1C9983FC00E38402 /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C88E6C1C9983FC00E38402 /* SetNewPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230376FD1C952BF700BE25EA /* Timpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timpage.swift; sourceTree = "<group>"; };
 		2377DCEA1C8EC550006A1050 /* 茄子.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "茄子.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2377DCED1C8EC550006A1050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2377DCEF1C8EC550006A1050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2377DCF21C8EC550006A1050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2377DCF41C8EC550006A1050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2377DCF71C8EC550006A1050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2377DCF91C8EC550006A1050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +64,25 @@
 		2377DD091C8EC550006A1050 /* 茄子UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "茄子UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2377DD0D1C8EC550006A1050 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		2377DD0F1C8EC550006A1050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2377DD1E1C8EC5AE006A1050 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Image/default.png; sourceTree = SOURCE_ROOT; };
+		2377DD201C8EC5AE006A1050 /* user.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user.jpg; path = Image/user.jpg; sourceTree = SOURCE_ROOT; };
+		2377DD271C8EC62E006A1050 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		2377DD291C8EC649006A1050 /* Mypai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mypai.swift; sourceTree = "<group>"; };
+		2377DD2B1C8EC656006A1050 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2377DD2D1C8EC664006A1050 /* Mine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mine.swift; sourceTree = "<group>"; };
+		237EFA861C8F1B9D007BD20B /* All.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
+		237EFA881C8F1BCE007BD20B /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		237EFA8A1C8F1BE8007BD20B /* Streetphoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streetphoto.swift; sourceTree = "<group>"; };
+		237EFA8C1C8F1BFF007BD20B /* Graduate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graduate.swift; sourceTree = "<group>"; };
+		237EFA8E1C8F1C13007BD20B /* Snow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow.swift; sourceTree = "<group>"; };
+		237FAFBC1C9436C2008E85AB /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2386C0F61C92B9220041C703 /* DraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraVC.swift; sourceTree = "<group>"; };
+		23895F7B1C983D160065B1EC /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		23898FD41C8F055E00ED8D51 /* Nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nav.png; path = Image/Nav.png; sourceTree = SOURCE_ROOT; };
+		23C068B61C94FE5E00B9B5F7 /* Firstview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firstview.swift; sourceTree = "<group>"; };
+		23C068B91C9506EA00B9B5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23C88E691C99754E00E38402 /* ForgetPassWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPassWordView.swift; sourceTree = "<group>"; };
+		23C88E6C1C9983FC00E38402 /* SetNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230376F71C95235100BE25EA /* LoadOther */ = {
+			isa = PBXGroup;
+			children = (
+				2377DCED1C8EC550006A1050 /* AppDelegate.swift */,
+				237FAFBC1C9436C2008E85AB /* Main.swift */,
+				23C068B61C94FE5E00B9B5F7 /* Firstview.swift */,
+				2377DCF41C8EC550006A1050 /* Assets.xcassets */,
+				2377DCF61C8EC550006A1050 /* LaunchScreen.storyboard */,
+				2377DCF91C8EC550006A1050 /* Info.plist */,
+				23C068B81C9506EA00B9B5F7 /* Main.storyboard */,
+			);
+			name = LoadOther;
+			sourceTree = "<group>";
+		};
+		230376F81C9523AF00BE25EA /* All */ = {
+			isa = PBXGroup;
+			children = (
+				237EFA861C8F1B9D007BD20B /* All.swift */,
+				230376FD1C952BF700BE25EA /* Timpage.swift */,
+			);
+			name = All;
+			sourceTree = "<group>";
+		};
+		230376F91C9523BC00BE25EA /* School */ = {
+			isa = PBXGroup;
+			children = (
+				237EFA881C8F1BCE007BD20B /* School.swift */,
+			);
+			name = School;
+			sourceTree = "<group>";
+		};
+		230376FA1C9523C600BE25EA /* Streetphoto */ = {
+			isa = PBXGroup;
+			children = (
+				237EFA8A1C8F1BE8007BD20B /* Streetphoto.swift */,
+			);
+			name = Streetphoto;
+			sourceTree = "<group>";
+		};
+		230376FB1C9523DA00BE25EA /* Graduate */ = {
+			isa = PBXGroup;
+			children = (
+				237EFA8C1C8F1BFF007BD20B /* Graduate.swift */,
+			);
+			name = Graduate;
+			sourceTree = "<group>";
+		};
+		230376FC1C9523E500BE25EA /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				237EFA8E1C8F1C13007BD20B /* Snow.swift */,
+			);
+			name = Snow;
+			sourceTree = "<group>";
+		};
 		2377DCE11C8EC54F006A1050 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +188,10 @@
 		2377DCEC1C8EC550006A1050 /* 茄子 */ = {
 			isa = PBXGroup;
 			children = (
-				2377DCED1C8EC550006A1050 /* AppDelegate.swift */,
-				2377DCEF1C8EC550006A1050 /* ViewController.swift */,
-				2377DCF11C8EC550006A1050 /* Main.storyboard */,
-				2377DCF41C8EC550006A1050 /* Assets.xcassets */,
-				2377DCF61C8EC550006A1050 /* LaunchScreen.storyboard */,
-				2377DCF91C8EC550006A1050 /* Info.plist */,
+				23895F7A1C983CF30065B1EC /* Login */,
+				2377DD241C8EC606006A1050 /* Tabbaritem */,
+				2377DD1C1C8EC568006A1050 /* Image */,
+				2377DD1B1C8EC557006A1050 /* Main */,
 			);
 			path = "茄子";
 			sourceTree = "<group>";
@@ -123,6 +212,99 @@
 				2377DD0F1C8EC550006A1050 /* Info.plist */,
 			);
 			path = "茄子UITests";
+			sourceTree = "<group>";
+		};
+		2377DD1B1C8EC557006A1050 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				230376F71C95235100BE25EA /* LoadOther */,
+				2386C0F51C92B8F40041C703 /* Drawview */,
+				237EFA851C8F1B46007BD20B /* Titleview */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2377DD1C1C8EC568006A1050 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2377DD1D1C8EC572006A1050 /* home */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		2377DD1D1C8EC572006A1050 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				23898FD41C8F055E00ED8D51 /* Nav.png */,
+				2377DD1E1C8EC5AE006A1050 /* default.png */,
+				2377DD201C8EC5AE006A1050 /* user.jpg */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		2377DD241C8EC606006A1050 /* Tabbaritem */ = {
+			isa = PBXGroup;
+			children = (
+				2377DD271C8EC62E006A1050 /* Activity.swift */,
+				2377DD291C8EC649006A1050 /* Mypai.swift */,
+				2377DD2B1C8EC656006A1050 /* Message.swift */,
+				2377DD2D1C8EC664006A1050 /* Mine.swift */,
+			);
+			name = Tabbaritem;
+			sourceTree = "<group>";
+		};
+		237EFA851C8F1B46007BD20B /* Titleview */ = {
+			isa = PBXGroup;
+			children = (
+				230376F81C9523AF00BE25EA /* All */,
+				230376F91C9523BC00BE25EA /* School */,
+				230376FC1C9523E500BE25EA /* Snow */,
+				230376FB1C9523DA00BE25EA /* Graduate */,
+				230376FA1C9523C600BE25EA /* Streetphoto */,
+			);
+			name = Titleview;
+			sourceTree = "<group>";
+		};
+		2386C0F51C92B8F40041C703 /* Drawview */ = {
+			isa = PBXGroup;
+			children = (
+				2386C0F61C92B9220041C703 /* DraVC.swift */,
+			);
+			name = Drawview;
+			sourceTree = "<group>";
+		};
+		23895F7A1C983CF30065B1EC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				23C88E6B1C9983D300E38402 /* SetNewPassword */,
+				23C88E681C99751100E38402 /* Forgetpassword */,
+				23C88E671C99750100E38402 /* Loginview */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		23C88E671C99750100E38402 /* Loginview */ = {
+			isa = PBXGroup;
+			children = (
+				23895F7B1C983D160065B1EC /* login.swift */,
+			);
+			name = Loginview;
+			sourceTree = "<group>";
+		};
+		23C88E681C99751100E38402 /* Forgetpassword */ = {
+			isa = PBXGroup;
+			children = (
+				23C88E691C99754E00E38402 /* ForgetPassWordView.swift */,
+			);
+			name = Forgetpassword;
+			sourceTree = "<group>";
+		};
+		23C88E6B1C9983D300E38402 /* SetNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				23C88E6C1C9983FC00E38402 /* SetNewPassword.swift */,
+			);
+			name = SetNewPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +413,10 @@
 			files = (
 				2377DCF81C8EC550006A1050 /* LaunchScreen.storyboard in Resources */,
 				2377DCF51C8EC550006A1050 /* Assets.xcassets in Resources */,
-				2377DCF31C8EC550006A1050 /* Main.storyboard in Resources */,
+				23898FD51C8F055E00ED8D51 /* Nav.png in Resources */,
+				23C068BA1C9506EA00B9B5F7 /* Main.storyboard in Resources */,
+				2377DD231C8EC5AE006A1050 /* user.jpg in Resources */,
+				2377DD211C8EC5AE006A1050 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +441,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2377DCF01C8EC550006A1050 /* ViewController.swift in Sources */,
+				23C068B71C94FE5E00B9B5F7 /* Firstview.swift in Sources */,
+				23C88E6D1C9983FC00E38402 /* SetNewPassword.swift in Sources */,
+				23895F7C1C983D160065B1EC /* login.swift in Sources */,
+				237EFA8F1C8F1C13007BD20B /* Snow.swift in Sources */,
+				2377DD2A1C8EC649006A1050 /* Mypai.swift in Sources */,
+				230376FE1C952BF700BE25EA /* Timpage.swift in Sources */,
+				2377DD2E1C8EC664006A1050 /* Mine.swift in Sources */,
+				237FAFBD1C9436C2008E85AB /* Main.swift in Sources */,
+				2377DD2C1C8EC656006A1050 /* Message.swift in Sources */,
+				237EFA871C8F1B9D007BD20B /* All.swift in Sources */,
+				23C88E6A1C99754E00E38402 /* ForgetPassWordView.swift in Sources */,
+				2386C0F71C92B9220041C703 /* DraVC.swift in Sources */,
+				2377DD281C8EC62E006A1050 /* Activity.swift in Sources */,
 				2377DCEE1C8EC550006A1050 /* AppDelegate.swift in Sources */,
+				237EFA891C8F1BCE007BD20B /* School.swift in Sources */,
+				237EFA8D1C8F1BFF007BD20B /* Graduate.swift in Sources */,
+				237EFA8B1C8F1BE8007BD20B /* Streetphoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +493,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2377DCF11C8EC550006A1050 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2377DCF21C8EC550006A1050 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2377DCF61C8EC550006A1050 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2377DCF71C8EC550006A1050 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		23C068B81C9506EA00B9B5F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C068B91C9506EA00B9B5F7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -484,6 +684,7 @@
 				2377DD141C8EC550006A1050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2377DD151C8EC550006A1050 /* Build configuration list for PBXNativeTarget "茄子Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +693,7 @@
 				2377DD171C8EC550006A1050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2377DD181C8EC550006A1050 /* Build configuration list for PBXNativeTarget "茄子UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +702,7 @@
 				2377DD1A1C8EC550006A1050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  Firstviewe.swift
 //  茄子
 //
-//  Created by jake on 16/3/8.
+//  Created by jake on 16/3/13.
 //  Copyright © 2016年 茄子. All rights reserved.
+//
 
 import UIKit
 
-class ViewController: UIViewController,UIScrollViewDelegate {
-    let Dra:DraVC = DraVC.init()
+class Firstview: UINavigationController,UIScrollViewDelegate {
     let Tool:UIToolbar = UIToolbar.init()
     let Nav:UINavigationBar = UINavigationBar.init()
     let Titilescroll: UIScrollView = UIScrollView.init()
@@ -22,35 +22,32 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("pushi:"), name: "push", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("AnimationForDraw"), name: "backhome", object: nil)
-       
         Buildbar()
         SetToolbar()
         SetUserPhoto()
         SetNavigationbar()
         SetTitilescrollview()
         SetButtonForTitleScrollview()
-        self.addChildViewController(Dra)
+        
     }
-
+    
     override func viewWillAppear(var animated: Bool) {
         self.navigationController?.navigationBarHidden = true
         animated = true
         Buttonaction(Button1)
         self.view.transform = CGAffineTransformMakeTranslation( 0, 0)
     }
-        func Buildbar()
+    func Buildbar()
     {
-        Nav.frame = CGRectMake(0, 0, (self.navigationController?.navigationBar.frame.width)!, (self.navigationController?.navigationBar.frame.height)! + rect.height)
+        Nav.frame = CGRectMake(0, 0, (self.navigationBar.frame.width), (self.navigationBar.frame.height) + rect.height)
         self.view.addSubview(Nav)
     }
     
     func SetUserPhoto()
     {
-        let User: UIImageView = UIImageView.init(frame: CGRectMake(10, 0, self.navigationController!.navigationBar.frame.height, self.navigationController!.navigationBar.frame.height))
+        let User: UIImageView = UIImageView.init(frame: CGRectMake(10, 0, self.navigationBar.frame.height, self.navigationBar.frame.height))
         User.layer.masksToBounds = true
-        User.layer.cornerRadius = self.navigationController!.navigationBar.frame.height / 2
+        User.layer.cornerRadius = self.navigationBar.frame.height / 2
         User.layer.borderWidth = 2
         User.layer.borderColor = UIColor.whiteColor().CGColor
         User.image = UIImage.init(named: "user.jpg")
@@ -62,60 +59,41 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     func Ueraction()
     {
-        
-        
-        self.view.addSubview(childViewControllers[0].view)
-        childViewControllers[0].view.transform = CGAffineTransformMakeTranslation( -self.view.frame.width , 0)
+        NSNotificationCenter.defaultCenter().postNotificationName("tabright", object: nil)
         let leftgesture :UISwipeGestureRecognizer = UISwipeGestureRecognizer.init(target: self, action: Selector("AnimationForDraw"))
         leftgesture.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(leftgesture)
-
+        
         UIView.animateWithDuration(1, animations: {
-                    if(self.view.frame.origin.x != 0)
+            if(self.view.frame.origin.x != 0)
             {
-                self.view.transform = CGAffineTransformMakeTranslation( 0, 0)
-                self.tabBarController?.tabBar.transform = CGAffineTransformMakeTranslation( 0, 0)
+                
+                NSNotificationCenter.defaultCenter().postNotificationName("firstleft", object: nil)
+                NSNotificationCenter.defaultCenter().postNotificationName("tableft", object: nil)
                 
             }
             else
-                    {
-                        self.view.transform = CGAffineTransformMakeTranslation( self.view.frame.width * 3 / 4, 0)
-                        self.tabBarController?.tabBar.transform = CGAffineTransformMakeTranslation( self.view.frame.width * 3 / 4, 0)
-
-            
-            }
-            }, completion: {
+            {
+                NSNotificationCenter.defaultCenter().postNotificationName("firstright", object: nil)
+                NSNotificationCenter.defaultCenter().postNotificationName("tabright", object: nil)
                 
-                (Bool finished) in
-                if(self.view.frame.origin.x == 0)
-                {
-                self.childViewControllers[0].view.removeFromSuperview()
-                }
                 
             }
-        )
+            } )
         
     }
     func AnimationForDraw()
     {
-        UIView.animateWithDuration(1, animations: {
-            self.view.transform = CGAffineTransformMakeTranslation( 0, 0)
-            self.tabBarController?.tabBar.transform = CGAffineTransformMakeTranslation( 0, 0)
-            
-        
-            }, completion: {
-                (Bool finished) in
-                self.childViewControllers[0].view.removeFromSuperview()
-        
-        })
+        NSNotificationCenter.defaultCenter().postNotificationName("tableft", object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("firstleft", object: nil)
         
         
     }
     func SetTitilescrollview()
     {
-
+        
         Titilescroll.backgroundColor = UIColor.blackColor()
-        Titilescroll.frame = CGRectMake(0, (self.navigationController?.navigationBar.frame.height)! + rect.height + 1,self.view.frame.width , 46)
+        Titilescroll.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height,self.view.frame.width , 46)
         Titilescroll.contentSize = CGSizeMake(500 , 0)
         self.automaticallyAdjustsScrollViewInsets = false
         
@@ -142,7 +120,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         titilelable.textColor = UIColor.whiteColor()
         Tool.addSubview(titilelable)
     }
-
+    
     func SetButtonForTitleScrollview()
     {
         
@@ -223,7 +201,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
             if(willdestroyed == self.all.view || willdestroyed == self.streetphoto.view || willdestroyed == school.view || willdestroyed == graduate.view || willdestroyed == snow.view)
             {
                 willdestroyed.removeFromSuperview()
-            
+                
             }
         }
         
@@ -231,7 +209,8 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     func SetFrameForViewOfTitleview(willset:UIViewController) ->UIView
     {
-        willset.view.frame = CGRectMake(0, (self.navigationController?.navigationBar.frame.height)! + rect.height + 1 + 46, self.view.frame.width, self.view.frame.height - (self.tabBarController?.tabBar.frame.height)!)
+        
+        willset.view.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height  + 46, self.view.frame.width, self.view.frame.height - (self.navigationBar.frame.height) - rect.height - 47 - 49 )
         return willset.view
     }
     
@@ -243,6 +222,5 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
         
     }
-
+    
 }
-
